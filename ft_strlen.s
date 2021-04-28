@@ -1,7 +1,7 @@
-				global		ft_strlen
+				global		_ft_strlen
 
 				section		.text
-ft_strlen:		mov			rax, 0					; init ret value as 0
+_ft_strlen:		mov			rax, 0					; init ret value as 0
 
 .loop:			cmp			BYTE [rdi + rax], 0		; if *str == 0
 				je			return					; return

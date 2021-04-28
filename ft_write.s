@@ -1,6 +1,6 @@
-				global		ft_write
+				global		_ft_write
 
 				section		.text
-ft_write		mov			rax, 1
+_ft_write		mov			rax, 0x2000004
 				syscall
 				ret

@@ -21,7 +21,7 @@ int		main(void)
 	printf("og_strcmp: %d\n", strcmp("Hey ma", "Hey man"));
 	printf("ft_strcmp: %d\n", ft_strcmp("hey ma", "hey man"));
 	//----
-	printf("og_strdup: %s", strdup("Hello World!"));
-	printf("ft_strdup: %s", ft_strdup("Hello World!"));
+	printf("og_strdup: %s\n", strdup("Hello World!"));
+	printf("ft_strdup: %s\n", ft_strdup("Hello World!"));
 	return (0);
 }

@@ -1,7 +1,7 @@
-				global		ft_strcpy
+				global		_ft_strcpy
 
 				section		.text
-ft_strcpy:		mov			rax, rdi				; cpy dest to ret
+_ft_strcpy:		mov			rax, rdi				; cpy dest to ret
 				mov			r8, 0					; init i as 0
 
 .loop:			cmp			BYTE [rsi + r8], 0		; if (*src == 0)

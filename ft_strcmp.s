@@ -1,7 +1,7 @@
-				global		ft_strcmp
+				global		_ft_strcmp
 
 				section		.text
-ft_strcmp:
+_ft_strcmp:
 				mov			r8, 0
 .loop:
 				cmp			BYTE [rdi + r8], 0

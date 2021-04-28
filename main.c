@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <errno.h>
 #include "libasm.h"
 
 int		main(void)
@@ -9,8 +10,10 @@ int		main(void)
 	char	*str1;
 	char	*str2;
 
-	write(1, "HI!", 3);
-	ft_write(1, "HI!", 3);
+	write(1, "HI\n", -3);
+	printf("og errno: %d\n", errno);
+	ft_write(1, "HI\n", -3);
+	printf("ft errno: %d\n", errno);
 	str1 = strdup("nigga");
 	printf("og_strlen: %d\n", (int)strlen(str1));
 	printf("ft_strlen: %d\n", (int)ft_strlen(str1));
